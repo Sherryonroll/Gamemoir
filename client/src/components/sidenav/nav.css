@@ -1,0 +1,89 @@
+.gamemoir__sidenav {
+  width: 80px;
+  display: flex;
+  position: fixed;
+  background: -moz-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 17px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  position: absolute;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 40px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_list {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.icon_list svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon_list.active {
+  transform: scale(1.3);
+  background-color: #1b225b;
+  border-radius: 50%;
+}
+
+.image_Cover_grid img {
+  transition: 0.3s;
+}
+
+.image_Cover_grid:hover img {
+  transform: scale(1.2) rotate(5deg);
+}

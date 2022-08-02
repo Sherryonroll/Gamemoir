@@ -1,0 +1,94 @@
+.gamemoir__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.3);
+}
+.gamemoir__navbar-button {
+  /* flex-direction: row; */
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+}
+.gamemoir__navbar-button p {
+  font-size: 20px;
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+.gamemoir__navbar-login {
+  margin-left: 1rem;
+
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+.gamemoir__navbar-hamburger {
+  position: relative;
+  display: none;
+}
+.gamemoir__navbar-hamburger_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-block);
+  position: absolute;
+  padding: 2rem;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.5);
+}
+.gamemoir__navbar-hamburger_login {
+  padding: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .gamemoir__navbar {
+    padding: 1rem 3rem;
+  }
+  .gamemoir__navbar-button {
+    display: none;
+  }
+
+  .gamemoir__navbar-hamburger {
+    display: block;
+  }
+}

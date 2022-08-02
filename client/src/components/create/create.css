@@ -1,0 +1,149 @@
+.gamemoir__login-create {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  box-shadow: 10px 10px var(--color-bg);
+}
+
+.gamemoir__login-create h2 {
+  font-family: var(--font-family);
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 30px;
+}
+.gamemoir__login-create label {
+  padding-left: 10px;
+}
+.gamemoir__login-create input {
+  padding-left: 2rem;
+  display: block;
+  width: 40vh;
+  padding: 5px 20px;
+  margin: 0.5rem;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+/* .gamemoir__login-button input {
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.25rem 6rem;
+    color: aliceblue;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #743ad5, #d53a9d);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .gamemoir__login-button input:hover {
+    background: none;
+  } */
+input {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+.gamemoir__login-create {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  margin: auto;
+  height: auto;
+  width: 50vh;
+  padding: 2rem;
+
+  /* background: var(--color-block); */
+  background: -moz-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 7% 19%,
+    rgba(1, 23, 46, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  border-left: 1px solid;
+
+  border-image-slice: 1;
+
+  border-image: linear-gradient(to bottom, #040c18, #743ad5, #d53a9d, #040c18) 1
+    100%;
+  box-shadow: 0 1px 17px rgba(0, 0, 0, 0.3);
+}
+::-webkit-calendar-picker-indicator {
+  background-color: var(--color-text);
+  color: aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-post {
+  margin-top: 1rem;
+
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 3px 30px;
+  width: 20vh;
+}
+.create-btn {
+  padding-left: 10px;
+}
+.btn-post:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+input[type='file']::file-selector-button {
+  background-color: var(--color-text);
+}
+.image-error {
+  color: rgb(190, 93, 93);
+  padding-left: 2rem;
+}
+@media screen and (max-width: 540px) {
+  .gamemoir__login-create {
+    width: 40vh;
+  }
+  .gamemoir__login-create input {
+    width: 30vh;
+  }
+  .btn-post {
+    width: 15vh;
+  }
+  .gamemoir__login-create h2 {
+    font-size: 20px;
+  }
+}

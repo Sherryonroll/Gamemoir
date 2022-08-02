@@ -1,0 +1,29 @@
+.gamemoir__cards {
+  font-family: var(--font-family);
+  display: grid;
+  margin: auto;
+  padding: 2rem;
+  max-width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+.post__image {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+@media screen and (max-width: 540px) {
+  .gamemoir__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 740px) {
+  h5 {
+    font-size: 10px;
+  }
+}

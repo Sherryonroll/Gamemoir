@@ -1,0 +1,35 @@
+.gamemoir__dashboard {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 3rem;
+  padding: 2 2rem;
+  justify-content: space-between;
+}
+.welcome {
+  font-family: var(--font-family);
+  padding: 0 4rem;
+  font-size: 30px;
+  color: var(--color-text);
+  font-weight: 200;
+}
+.welcome .user {
+  font-weight: 400;
+}
+.logout {
+  padding: 0 2rem;
+}
+@media screen and (max-width: 540px) {
+  .gamemoir__dashboard {
+  }
+  .welcome {
+    font-size: 5px;
+  }
+  .logout span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome {
+    font-size: 25px;
+  }
+}
